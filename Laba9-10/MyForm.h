@@ -82,7 +82,7 @@ namespace Laba910
 			// 
 			this->button2->Location = System::Drawing::Point(12, 12);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(200, 23);
+			this->button2->Size = System::Drawing::Size(185, 35);
 			this->button2->TabIndex = 3;
 			this->button2->Text = L"Сгенерировать массив случайных однобайтовых чисел";
 			this->button2->UseVisualStyleBackColor = true;
