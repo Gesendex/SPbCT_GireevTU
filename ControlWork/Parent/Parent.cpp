@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main()
+int main(int argc, wchar_t* argv[])
 {
 	STARTUPINFO sti = { 0 };
 	PROCESS_INFORMATION pi = { 0 };
@@ -14,6 +14,8 @@ int main()
 
 	wstring ApplicationName(L"C:\\SP\\1\\Parent\\Debug\\Child.exe ");
 	LPWSTR lpwAppName = &ApplicationName[0];
+	
+	
 
 	wstring CommandLine(L"file.txt file2.txt");
 	LPWSTR lpwCmdLine = &CommandLine[0];
