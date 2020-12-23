@@ -1,5 +1,0 @@
-﻿  MyForm.cpp
-D:\Учеба\СП\Лабы\SPbCT_GireevTU\EducationalPractice\MainWindow\MyForm.cpp(7,11): error C2976: std::array: слишком мало аргументов шаблон
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\include\utility(394): message : см. объявление "std::array"
-D:\Учеба\СП\Лабы\SPbCT_GireevTU\EducationalPractice\MainWindow\MyForm.cpp(7,31): error C3699: ^: это косвенное обращение невозможно использовать для типа "std::array"
-D:\Учеба\СП\Лабы\SPbCT_GireevTU\EducationalPractice\MainWindow\MyForm.cpp(7,31): message : для продолжения работы компилятор заменил "^" на "*"
