@@ -1,2 +1,0 @@
-# SPbCT_GireevTU
- 
