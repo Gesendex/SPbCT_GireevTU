@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+D:\Учеба\СП\Лабы\SPbCT_GireevTU\EducationalPractice\Okno\MyForm.h(251,8): warning C4101: buff: неиспользованная локальная переменная
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Okno.vcxproj -> D:\Учеба\СП\Лабы\SPbCT_GireevTU\EducationalPractice\Okno\Debug\Okno.exe
