@@ -34,7 +34,7 @@ namespace Okno {
 			//TODO: добавьте код конструктора
 			//
 		}
-	private: Thread^ myThread;
+	private: Thread^ myThread; //потоки
 	protected:
 		/// <summary>
 		/// Освободить все используемые ресурсы.
@@ -186,10 +186,10 @@ namespace Okno {
 #pragma endregion
 	
 
-	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)// обработчик загрузки формы
 	{
 		
-
+		//вывод имени, даты, времени и исходного файла на форму
 		DateTime datetime = DateTime::Now;
 		label2->Text += datetime.ToString();
 		String^ Filename = "SourceFile.txt";
@@ -198,7 +198,7 @@ namespace Okno {
 		file->Close();
 	}
 
-	public: void thread1()
+	public: void thread1()//Поток 1
 	{
 		vector <string> vect(10);
 		char buff;
@@ -218,14 +218,14 @@ namespace Okno {
 		a1.close();
 	}
 
-	public: void thread2()
+	public: void thread2()//поток 2
 	{
 		LPSTR a = "FinalFile.txt";
-		ATTRIBUTE(a);
+		ATTRIBUTE(a);//функция из библиотеки длл
 	}
 	
 
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {// обработчик нажития кнопки 1
 		
 		myThread = gcnew Thread(gcnew ThreadStart(this, &MyForm::thread1));
 		myThread->Start();
@@ -237,14 +237,14 @@ namespace Okno {
 		file->Close();
 	}
 
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e)
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e)// обработчик нажития кнопки 2
 	{
 		myThread = gcnew Thread(gcnew ThreadStart(this, &MyForm::thread2));
 		myThread->Start();
 		myThread->Join();
 	}
 
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e)
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e)// обработчик нажития кнопки 4
 	{
 
 		vector <string> vect(10);
@@ -271,7 +271,7 @@ namespace Okno {
 		file->Close();
 	}
 
-	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e)
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e)// обработчик нажития кнопки 3
 	{
 		vector <string> vect(10);
 		ifstream a1("FinalFile.txt");
